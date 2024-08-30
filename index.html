@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Company Survey</h2>
+        <form action="#" method="post">
+            <!-- Name Section -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Section -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Experience Rating -->
+            <label for="experience">Your Experience:</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="experience" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                <input type="radio" id="star4" name="experience" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                <input type="radio" id="star3" name="experience" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                <input type="radio" id="star2" name="experience" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                <input type="radio" id="star1" name="experience" value="1"><label for="star1" title="1 star">&#9733;</label>
+            </div>
+
+            <!-- Satisfaction Ratings -->
+            <p>How satisfied are you with:</p>
+            <div class="rating-table">
+                <label>Purchase</label>
+                <div class="rating-options">
+                    <input type="radio" name="purchase" value="1"> Very Unsatisfied
+                    <input type="radio" name="purchase" value="2"> Unsatisfied
+                    <input type="radio" name="purchase" value="3"> Neutral
+                    <input type="radio" name="purchase" value="4"> Satisfied
+                    <input type="radio" name="purchase" value="5"> Very Satisfied
+                </div>
+
+                <label>Service</label>
+                <div class="rating-options">
+                    <input type="radio" name="service" value="1"> Very Unsatisfied
+                    <input type="radio" name="service" value="2"> Unsatisfied
+                    <input type="radio" name="service" value="3"> Neutral
+                    <input type="radio" name="service" value="4"> Satisfied
+                    <input type="radio" name="service" value="5"> Very Satisfied
+                </div>
+
+                <label>Company Overall</label>
+                <div class="rating-options">
+                    <input type="radio" name="overall" value="1"> Very Unsatisfied
+                    <input type="radio" name="overall" value="2"> Unsatisfied
+                    <input type="radio" name="overall" value="3"> Neutral
+                    <input type="radio" name="overall" value="4"> Satisfied
+                    <input type="radio" name="overall" value="5"> Very Satisfied
+                </div>
+            </div>
+
+            <!-- Recommend Options -->
+            <p>How likely are you to:</p>
+            <div class="rating-table">
+                <label>Buy from us again</label>
+                <div class="rating-options">
+                    <input type="radio" name="buy_again" value="1"> Very Unlikely
+                    <input type="radio" name="buy_again" value="2"> Unlikely
+                    <input type="radio" name="buy_again" value="3"> Neutral
+                    <input type="radio" name="buy_again" value="4"> Likely
+                    <input type="radio" name="buy_again" value="5"> Very Likely
+                </div>
+
+                <label>Recommend our product to others</label>
+                <div class="rating-options">
+                    <input type="radio" name="recommend_product" value="1"> Very Unlikely
+                    <input type="radio" name="recommend_product" value="2"> Unlikely
+                    <input type="radio" name="recommend_product" value="3"> Neutral
+                    <input type="radio" name="recommend_product" value="4"> Likely
+                    <input type="radio" name="recommend_product" value="5"> Very Likely
+                </div>
+
+                <label>Recommend our company to others</label>
+                <div class="rating-options">
+                    <input type="radio" name="recommend_company" value="1"> Very Unlikely
+                    <input type="radio" name="recommend_company" value="2"> Unlikely
+                    <input type="radio" name="recommend_company" value="3"> Neutral
+                    <input type="radio" name="recommend_company" value="4"> Likely
+                    <input type="radio" name="recommend_company" value="5"> Very Likely
+                </div>
+            </div>
+
+            <!-- Additional Comments -->
+            <label for="comments">Additional comments or suggestions:</label>
+            <textarea id="comments" name="comments" rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
